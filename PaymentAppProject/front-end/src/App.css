@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2b64d8bb-730f-4926-8b48-1e7e4658923c/de9ek9n-0ec2fcec-15a6-41f7-96ce-802d162d3774.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzJiNjRkOGJiLTczMGYtNDkyNi04YjQ4LTFlN2U0NjU4OTIzY1wvZGU5ZWs5bi0wZWMyZmNlYy0xNWE2LTQxZjctOTZjZS04MDJkMTYyZDM3NzQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.6EBs6YnGRSFaAVOTSmotl-BIp7vuimI8_-s_2tmuIos");
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+#root,
+#container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.beforeMother2,
+.beforeMother {
+  position: relative;
+  display: flex;
+  flex: 1;
+  width: 100%;
+}
+
+.motherBox {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY( -50% );
+  width: calc( 100% - 50px );
+}
+
+.motherBox2 {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY( -50% );
+  width: calc( 100% - 50px );
+}
+
+
+#WelcomeHeader {
+  color: white;
+  text-align: center;
+  font-family: "Comic Sans", sans-serif;
+}
+
+#WelcomeBox {
+  background-color: rgb(255,255,255,.1);
+  border: 1px solid gray;
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  max-width: 500px;
+  max-height: 500px;
+  overflow-y: auto;
+  width: 95%;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0,2);
+  padding: 20px 35px;
+  margin: auto auto auto;
+}
+
+#WelcomeBox input {
+  background-color: transparent;
+  color: white;
+  width: 100%;
+  border: 1px solid #c2c2c2;
+  outline: none;
+  border-radius: 3px;
+  padding: 10px 12px;
+}
+
+#WelcomeBox input::placeholder {
+  color: white;
+}
+
+#WelcomeBox > .transaction {
+  display: flex;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #c2c2c2;
+}
+
+#WelcomeBox > .transaction:not(:first-of-type) {
+  margin-top: 5px;
+}
+
+#WelcomeBox > .transaction > .image {
+  background: grey;
+  border-radius: 3px;
+  height: 60px;
+  width: 60px;
+}
+
+#WelcomeBox > .transaction > .sideInfo {
+  padding: 5px;
+  width: calc( 100% - 60px );
+}
+
+#WelcomeBox > .transaction > .sideInfo > a {
+  position: relative;
+  display: block;
+  left: 20px;
+  margin-top: 5px;
+  font-weight: bold;
+  color: white;
+}
+
+#PaymentBox {
+  border: solid;
+  border-color: darkgray;
+  border-radius: 10px;
+  background-color: gray;
+  margin: auto;
+  width: 500px;
+  height: 200px;
+  text-align: center;
+}
+
+#username, #password, #to, #from, #amount, #type, #notes {
+  margin-top: 10px;
+}
+
+button {
+  width: 100%;
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 25px;
+}
